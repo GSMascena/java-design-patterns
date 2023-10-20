@@ -2,19 +2,19 @@ package gsm.designpatterns.gof.strategy;
 
 public class TestStrategy {
     public static void main(String[] args) {
-        Comportamento normal = new ComportamentoNormal();
-        Comportamento defensivo = new ComportamentoDefensivo();
-        Comportamento agressivo = new ComportamentoAgressivo();
+        Behaviour normal = new BehaviourNormal();
+        Behaviour defensive = new BehaviourDefensive();
+        Behaviour aggressive = new BehaviourAggressive();
 
-        Robo robo = new Robo();
+        Robot robot = new Robot();
 
-        robo.setComportamento(normal);
-        robo.mover();
+        robot.setBehaviour(normal);
+        robot.move();
 
-        robo.setComportamento(defensivo);
-        robo.mover();
+        robot.setBehaviour(defensive);
+        robot.move();
 
-        robo.setComportamento(agressivo);
-        robo.mover();
+        robot.setBehaviour(aggressive);
+        robot.move();
     }
 }
