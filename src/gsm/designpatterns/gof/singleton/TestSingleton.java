@@ -1,6 +1,6 @@
 package gsm.designpatterns.gof.singleton;
 
-public class Test {
+public class TestSingleton {
     public static void main(String[] args) {
 
         // Testes da implementação do Design pattern Singleton
